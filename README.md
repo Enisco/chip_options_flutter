@@ -1,16 +1,5 @@
 # chip_options_flutter
+This is a simple text-to-chip UI implementation. 
 
-A new Flutter project.
+https://github.com/Enisco/chip_options_flutter/assets/49729441/8b38fe4a-833d-4e5c-89a2-21286019d4b0
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

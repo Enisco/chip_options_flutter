@@ -18,7 +18,6 @@ class _ChipTextFieldScreenState extends State<ChipTextFieldScreen> {
     setState(() {
       tags.add(value);
       tagsController.text = '';
-      // tagsController;
     });
   }
 
@@ -53,7 +52,6 @@ class _ChipTextFieldScreenState extends State<ChipTextFieldScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
-              // const Icon(Icons.wallet),
               tags.isNotEmpty
                   ? GridView.builder(
                       shrinkWrap: true,
@@ -62,8 +60,6 @@ class _ChipTextFieldScreenState extends State<ChipTextFieldScreen> {
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
-                        // mainAxisSpacing: 10,
-                        // crossAxisSpacing: 10,
                         mainAxisExtent: 45,
                       ),
                       itemBuilder: (context, index) => Chip(
@@ -76,7 +72,7 @@ class _ChipTextFieldScreenState extends State<ChipTextFieldScreen> {
                     )
                   : const SizedBox.shrink(),
               SizedBox(
-                height: tags.isNotEmpty ? 30 : 0,
+                height: tags.isNotEmpty ? 20 : 0,
               ),
               TextFormField(
                 controller: tagsController,

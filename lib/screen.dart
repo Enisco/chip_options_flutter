@@ -74,16 +74,18 @@ class _ChipTextFieldScreenState extends State<ChipTextFieldScreen> {
               SizedBox(
                 height: tags.isNotEmpty ? 20 : 0,
               ),
-              TextFormField(
-                controller: tagsController,
-                cursorColor: Colors.teal,
-                decoration: const InputDecoration(
-                  border: InputBorder.none,
-                  contentPadding: EdgeInsets.symmetric(horizontal: 10),
-                  hintText: "Enter tag here",
-                ),
-                onFieldSubmitted: (value) => saveTag(value),
-              ),
+              tags.length >= 3
+                  ? const SizedBox.shrink()
+                  : TextFormField(
+                      controller: tagsController,
+                      cursorColor: Colors.teal,
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.symmetric(horizontal: 10),
+                        hintText: "Enter tag here",
+                      ),
+                      onFieldSubmitted: (value) => saveTag(value),
+                    ),
             ],
           ),
         ),
